@@ -10,50 +10,66 @@
    
 </head>
 <body>
+
+    <div class="flexbox">
   
     <div class="container">
         <h1>Calculadora JS</h1>
-        
-        <input id="num1" type="number" />
+        <div class="inputstyle">
+        <input class="input1" id="num1" type="number"  placeholder="Digite um número" />
+
+        <input class="input2" id="num2" type="number" placeholder="Digite um número" />
+        </div>  
+        <div class="buttonstyle">
+        <div>
+        <button onclick="calc('+')">+</button>     
+        <button onclick="calc('-')">-</button> 
+        </div>
+        <div>
+        <button onclick="calc('/')">/</button> 
+        <button onclick="calc('*')">*</button> 
+        </div>
+        </div>
         <br>
-        <input id="num2" type="number" />
-        <br>
-        <button onclick="calc('+')"> Somar</button>     
-        <button onclick="calc('-')"> subtrair</button> 
-        <button onclick="calc('/')"> dividir</button> 
-        <button onclick="calc('*')"> multiplicar</button> 
-        <br>
+    </div>
+    <div class="container2">
         <input id="calc" type="number" readonly />
         <div id="history">
-
+            
         </div>
 
-
+    </div>
     </div>
 
     <script>
         function calc(op){
             var num1 = parseFloat(document.getElementById("num1").value);
             var num2 = parseFloat(document.getElementById("num2").value);
-            var soma = num1 + num2;
-            var subtrair = num1 - num2;
-            var multiplicar = num1 * num2;
-            var dividir = num1 / num2;
+        
 
             if (op == "-"){
+                var subtrair = num1 - num2;
                 document.getElementById("calc").value = subtrair ;
+                document.getElementById("history").innerHTML +="<br>" + subtrair;
             }
 
             if (op == "+"){
+                var soma = num1 + num2;
                 document.getElementById("calc").value = soma ;
+                document.getElementById("history").innerHTML +="<br>" + soma;
             }
 
             if (op == "*"){
-                document.getElementById("calc").value = multiplicar ;
+                var multiplicar = num1 * num2;
+                document.getElementById("calc").value = multiplicar;
+                document.getElementById("history").innerHTML +="<br>" + multiplicar;
             }
 
             if (op == "/"){
+                var dividir = num1 / num2;
                 document.getElementById("calc").value = dividir ;
+                document.getElementById("history").innerHTML +="<br>" + dividir;
+            
             }
          
        

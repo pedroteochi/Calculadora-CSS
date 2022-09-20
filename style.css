@@ -1,19 +1,89 @@
 body{
-    background-color: bisque;
+    background-color: #7db4b5;
+    font-family: 'Roboto';
 }
-}
+
 div{
     text-align: center;
 }   
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 100px;
+}
 .container{
     width:500px;
     height: 500px;
-  
-    background-color:rgb(223, 152, 66);
+    background-color:#e0eff1;
     
-    margin-left: 500px;
-
+   
+}
+.container2{
+    width:500px;
+    height: 500px;  
+    background-color:#e0eff1;
+    
+    
 }
 h1{
     text-align: center;
 }
+.input1{
+  width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 50px;;
+    background-color: #b7eaeb;
+
+}
+.input2{
+    width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 50px;
+    background-color: #b7eaeb;
+}
+button{
+    margin: 0 auto;
+	padding: 40px;
+    width: 170px;
+	border: none;
+	margin-bottom: 5px;
+	border-radius: 20px;
+    background-color: #38e3e6;
+    font-size: 30px;
+
+}
+.buttonstyle{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 10px;
+
+}
+.container2 > input{
+    
+    margin-top: 80px;
+	padding: 20px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 20px;
+    background-color: #b7eaeb;
+    
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
